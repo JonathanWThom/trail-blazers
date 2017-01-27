@@ -1,11 +1,10 @@
 <div *ngFor="let conference of conferences">
-  {{conference.name}}
+  <h3>{{conference.name}}</h3>
   <div *ngFor="let division of conference.divisions">
-    {{division.name}}
+    <h4>{{division.name}}</h4>
+    <h5>Team    |    Record</h5>
     <div *ngFor="let team of division.teams">
-      {{team.name}}
+      {{team.market}} {{team.name}} | {{team.wins}} - {{team.losses}}
     </div>
   </div>
-
-
 </div>
