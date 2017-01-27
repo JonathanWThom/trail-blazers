@@ -1,41 +1,58 @@
-Include instructions for set up
+# _Portland Trail Blazers_
 
-pipe
+#### _Mock website for the Blazers. 1.27.16_
 
-about Page
+#### By _**Jonathan Thom**_
 
-make look nice
+## Setup/Installation Requirements
 
-stats api
+* _In the command line, run:_
+```
+git clone https://github.com/JonathanWThom/trail-blazers.git
+cd trail-blazers
+npm install
+bower install
+touch src/app/api-keys.ts
+```
 
-# Trailblazers
+* Navigate to [https://console.firebase.google.com/](https://console.firebase.google.com/) and create a new project.
+* Click "Add Firebase to Web App" and copy the given information into the src/app/api-keys.ts file for this program. The format should be this (filling in your own information):
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+```
+export var masterFirebaseConfig = {
+  apiKey: XXXXXXXX,
+  authDomain: XXXXXXXX,
+  databaseURL: XXXXXXXXX,
+  storageBucket: XXXXXXXX,
+  messagingSenderId: XXXXXXX
+};
+```
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* In your Firebase Database, import the file "players.json" from this directory.
 
-## Code scaffolding
+* In your Firebase Database > Rules, paste and save as public:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+* In the command line, run: `ng serve`
+* Navigate to [http://localhost:4200](http://localhost:4200).
 
-## Build
+## Support and Contact Details
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+_Contact Jonathan at: jonathan.thom1990@gmail.com_
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Angular 2, TypeScript, CSS, HTML_
 
-## Running end-to-end tests
+### License
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+*MIT*
 
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2016 **_Jonathan Thom_**
