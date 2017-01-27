@@ -14,6 +14,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
 import { AdminComponent } from './admin/admin.component';
 import { PositionPipe } from './position.pipe';
+import { StandingsComponent } from './standings/standings.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     EditPlayerComponent,
     NewPlayerComponent,
     AdminComponent,
-    PositionPipe
+    PositionPipe,
+    StandingsComponent
   ],
   imports: [
     BrowserModule,
