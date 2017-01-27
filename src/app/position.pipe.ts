@@ -10,7 +10,7 @@ export class PositionPipe implements PipeTransform {
   //change to any object types if neccessary
 
   transform(input: any[], position: string) {
-    var output: FirebaseListObservable<any[]>;
+    var output: any[];
 
     if (position === "Center") {
       input.forEach(function(player) {
