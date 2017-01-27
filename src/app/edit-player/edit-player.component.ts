@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FirebaseObjectObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-edit-player',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-player.component.css']
 })
 export class EditPlayerComponent implements OnInit {
-
+  @Input() player: FirebaseObjectObservable<any>;
   constructor() { }
 
   ngOnInit() {
