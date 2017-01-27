@@ -9,31 +9,31 @@
   <div class="form-group">
     <label>Position</label>
     <br>
-    <input #newName class="form-control">
+    <input #newPosition class="form-control">
   </div>
 
   <div class="form-group">
     <label>Number</label>
     <br>
-    <input #newName class="form-control" type="number">
+    <input #newNumber class="form-control" type="number">
   </div>
 
   <div class="form-group">
     <label>Height (inches)</label>
     <br>
-    <input #newName class="form-control" type="number">
+    <input #newHeight class="form-control" type="number">
   </div>
 
   <div class="form-group">
     <label>Years Pro</label>
     <br>
-    <input #newName class="form-control" type="number">
+    <input #newExperience class="form-control" type="number">
   </div>
 
   <div class="form-group">
     <label>Image URL</label>
     <br>
-    <input #newName class="form-control">
+    <input #newImage class="form-control">
   </div>
 
   <button class="btn btn-success" (click)="newPlayer(newName.value, newPosition.value, newNumber.value, newHeight.value, newExperience.value, newImage.value); newName.value=''; newPosition.value=''; newNumber.value=''; newHeight.value=''; newExperience.value=''; newImage.value=''">Create Player</button>

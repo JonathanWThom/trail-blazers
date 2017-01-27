@@ -4,119 +4,104 @@
     "height": 81,
     "number": 8,
     "experience": 6,
-    "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202329.png",
-    "apiID": "56ff7cb8-4828-4aaa-8f95-0bf569a0786d"
+    "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202329.png"
     }, {
     "name": "Pat Connaughton",
     "position": "Forward",
     "height": 77,
     "number": 5,
     "experience": 1,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626192.png",
-    "apiID": "298852ca-299d-4cb9-a9e5-6ac909582f78"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626192.png"
       }, {
     "name": "Allen Crabbe",
     "position": "Guard",
     "height": 78,
     "number": 23,
     "experience": 3,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203459.png",
-    "apiID": "5ac1fb0f-24fe-4dce-aba5-6fc0dc9c27e7"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203459.png"
     }, {
     "name": "Ed Davis",
     "position": "Forward",
     "height": 82,
     "number": 17,
     "experience": 6,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202334.png",
-    "apiID": "9dbc15ee-deec-4c8c-86e9-71396ff80ef8"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202334.png"
     }, {
     "name": "Festus Ezeli",
     "position": "Center",
     "height": 83,
     "number": 31,
     "experience": 3,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203105.png",
-    "apiID": "17973022-bb81-427f-905e-86d3d3d9b51f"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203105.png"
     }, {
     "name": "Maurice Harkless",
     "position": "Forward",
     "height": 79,
     "number": 4,
     "experience": 4,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203090.png",
-    "apiID": "df6f21d3-5221-42e2-945b-8fe7cebdf03e"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203090.png"
     }, {
     "name": "Jake Layman",
     "position": "Forward",
     "height": 81,
     "number": 10,
     "experience": 0,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627774.png",
-    "apiID": "ce08115e-5e01-4fdc-991d-5d0f4db3eb9f"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627774.png"
     }, {
     "name": "Myers Leonard",
     "position": "Center",
     "height": 85,
     "number": 11,
     "experience": 4,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203086.png",
-    "apiID": "51d0a386-20a8-4e68-a8ec-face10febaff"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203086.png"
     }, {
     "name": "Damian Lillard",
     "position": "Guard",
     "height": 75,
     "number": 0,
     "experience": 4,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203081.png",
-    "apiID": "5382cf43-3a79-4a5a-a7fd-153906fe65dd"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203081.png"
     }, {
     "name": "C.J. McCollum",
     "position": "Guard",
     "height": 75,
     "number": 3,
     "experience": 3,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203468.png",
-    "apiID": "bc70a55a-cee0-478f-9a13-cf51c4a4187c"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203468.png"
     }, {
     "name": "Shabazz Napier",
     "position": "Guard",
     "height": 63,
     "number": 6,
     "experience": 2,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203894.png",
-    "apiID": "1c1c0edb-84df-42a8-a74b-5899849cd41a"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203894.png"
     }, {
     "name": "Mason Plumlee",
     "position": "Center",
     "height": 83,
     "number": 24,
     "experience": 3,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203486.png",
-    "apiID": "9570a938-324f-40e8-92dd-8a4fcf4a953b"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203486.png"
     }, {
     "name": "Tim Quarterman",
     "position": "Guard",
     "height": 78,
     "number": 55,
     "experience": 0,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627817.png",
-    "apiID": "41d83be6-3c9d-4b35-87ab-f5480a877997"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627817.png"
     }, {
     "name": "Evan Turner",
     "position": "Guard",
     "height": 79,
     "number": 1,
     "experience": 6,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202323.png",
-    "apiID": "ca4f6af4-c203-41d0-97a3-0286710710b6"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202323.png"
     }, {
     "name": "Noah Vonleh",
     "position": "Forward",
     "height": 81,
     "number": 21,
     "experience": 2,
-    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203943.png",
-    "apiID": "84215e01-6108-4fd0-9a11-19e9518ab378"
+    "image": "http://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203943.png"
   }]
 }

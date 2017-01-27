@@ -27,8 +27,7 @@ export class PlayerService {
       artist: player.position,
       number: parseInt(player.number),
       height: parseInt(player.height),
-      experience: parseInt(player.experience),
-      apiID: player.apiID
+      experience: parseInt(player.experience)
     });
   }
 
@@ -39,19 +38,6 @@ export class PlayerService {
 
   addPlayer(player: Player) {
     this.players.push(player);
-  }
-
-  getStats(player) {
-    this.getPlayerById(player.$key).subscribe(playerFB => {
-      console.log(playerFB.name);
-    });
-
-    // console.log(playerFB)
-    // playerFB.subscribe(x => {
-    //   console.log(playerFB.name)});
-    // console.log(playerFB.apiId);
-    // this.http.get("https://api.sportradar.us/nba-t3/players/" + playerFB.apiId + "/profile.json?api_key=" + nbaKey.apiKey).subscribe(result => console.log(result));
-    // //add fail condition
   }
 
 
