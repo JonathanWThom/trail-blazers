@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Player } from './player.model';
+import { Http } from '@angular/http';
+import { nbaKey } from './api-keys';
 
 @Injectable()
 export class PlayerService {
   players: FirebaseListObservable<any[]>;
 
-  constructor(private angularFire: AngularFire) {
+  constructor(private angularFire: AngularFire, private http: Http) {
     this.players = angularFire.database.list('players');
   }
 
@@ -25,7 +27,8 @@ export class PlayerService {
       artist: player.position,
       number: parseInt(player.number),
       height: parseInt(player.height),
-      experience: parseInt(player.experience)
+      experience: parseInt(player.experience),
+      apiID: player.apiID
     });
   }
 
@@ -36,6 +39,19 @@ export class PlayerService {
 
   addPlayer(player: Player) {
     this.players.push(player);
+  }
+
+  getStats(player) {
+    this.getPlayerById(player.$key).subscribe(playerFB => {
+      console.log(playerFB.name);
+    });
+
+    // console.log(playerFB)
+    // playerFB.subscribe(x => {
+    //   console.log(playerFB.name)});
+    // console.log(playerFB.apiId);
+    // this.http.get("https://api.sportradar.us/nba-t3/players/" + playerFB.apiId + "/profile.json?api_key=" + nbaKey.apiKey).subscribe(result => console.log(result));
+    // //add fail condition
   }
 
 

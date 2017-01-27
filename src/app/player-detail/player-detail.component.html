@@ -8,4 +8,5 @@
   <div class="col-sm-6">
     <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.name}}" />
   </div>
+  <button (click)="playerStats(playerToDisplay)">button</button>
 </div>
