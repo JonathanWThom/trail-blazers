@@ -1,0 +1,92 @@
+{ "players": [{
+    "name": "Al-Farouq Aminu",
+    "position": "Forward",
+    "height": 81,
+    "number": 8,
+    "experience": 6
+    }, {
+    "name": "Pat Connaughton",
+    "position": "Forward",
+    "height": 77,
+    "number": 5,
+    "experience": 1
+      }, {
+    "name": "Allen Crabbe",
+    "position": "Guard",
+    "height": 78,
+    "number": 23,
+    "experience": 3
+    }, {
+    "name": "Ed Davis",
+    "position": "Forward",
+    "height": 82,
+    "number": 17,
+    "experience": 6
+    }, {
+    "name": "Festus Ezeli",
+    "position": "Center",
+    "height": 83,
+    "number": 31,
+    "experience": 3
+    }, {
+    "name": "Maurice Harkless",
+    "position": "Forward",
+    "height": 79,
+    "number": 4,
+    "experience": 4
+    }, {
+    "name": "Jake Layman",
+    "position": "Forward",
+    "height": 81,
+    "number": 10,
+    "experience": 0
+    }, {
+    "name": "Myers Leonard",
+    "position": "Center",
+    "height": 85,
+    "number": 11,
+    "experience": 4
+    }, {
+    "name": "Damian Lillard",
+    "position": "Guard",
+    "height": 75,
+    "number": 0,
+    "experience": 4
+    }, {
+    "name": "C.J. McCollum",
+    "position": "Guard",
+    "height": 75,
+    "number": 3,
+    "experience": 3
+    }, {
+    "name": "Shabazz Napier",
+    "position": "Guard",
+    "height": 63,
+    "number": 6,
+    "experience": 2
+    }, {
+    "name": "Mason Plumlee",
+    "position": "Center",
+    "height": 83,
+    "number": 24,
+    "experience": 3
+    }, {
+    "name": "Tim Quarterman",
+    "position": "Guard",
+    "height": 78,
+    "number": 55,
+    "experience": 0
+    }, {
+    "name": "Evan Turner",
+    "position": "Guard",
+    "height": 79,
+    "number": 1,
+    "experience": 6
+    }, {
+    "name": "Noah Vonleh",
+    "position": "Forward",
+    "height": 81,
+    "number": 21,
+    "experience": 2
+  }]
+}
