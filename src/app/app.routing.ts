@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { StandingsComponent } from './standings/standings.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'standings',
+    component: StandingsComponent
   }
 ];
 

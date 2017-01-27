@@ -1,0 +1,11 @@
+<div *ngFor="let conference of conferences">
+  {{conference.name}}
+  <div *ngFor="let division of conference.divisions">
+    {{division.name}}
+    <div *ngFor="let team of division.teams">
+      {{team.name}}
+    </div>
+  </div>
+
+
+</div>
