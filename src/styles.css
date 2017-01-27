@@ -12,6 +12,12 @@
   color: red;
 }
 
-h3 {
+h3, .playerList {
   text-align: center;
+}
+
+select.form-control {
+display: block;
+margin: 0 auto;
+width: 25%;
 }

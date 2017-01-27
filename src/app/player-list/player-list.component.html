@@ -1,11 +1,12 @@
-<select (change)="onChange($event.target.value)">
-      <option value="All Players" selected="selected">All Players</option>
-      <option value="Guard">Guards</option>
-      <option value="Forward">Forwards</option>
-      <option value="Center">Centers</option>
-    </select>
+<select class="form-control"(change)="onChange($event.target.value)">
+  <option value="All Players" selected="selected">All Players</option>
+  <option value="Guard">Guards</option>
+  <option value="Forward">Forwards</option>
+  <option value="Center">Centers</option>
+</select>
+<br>
 
-<div *ngFor="let player of players | async | position:filterByPosition">
+<div class="playerList" *ngFor="let player of players | async | position:filterByPosition">
   <a (click)="goToPlayerPage(player)">{{player.name}}</a>
   <div *ngIf="currentRoute === '/admin'">
     <app-edit-player [player]="player"></app-edit-player>
