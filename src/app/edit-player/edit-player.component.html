@@ -1,3 +1,23 @@
-<p>
-  edit-player works!
-</p>
+<h4>Edit Player</h4>
+
+<label>Name:</label>
+<input [(ngModel)]="player.name">
+<br>
+
+<label>Position:</label>
+<input [(ngModel)]="player.position">
+<br>
+
+<label>Number:</label>
+<input [(ngModel)]="player.number">
+<br>
+
+<label>Height (inches):</label>
+<input [(ngModel)]="player.height">
+<br>
+
+<label>Years Pro:</label>
+<input [(ngModel)]="player.experience">
+<br>
+
+<button (click)="updatePlayer(player)" class="btn">Update></button>

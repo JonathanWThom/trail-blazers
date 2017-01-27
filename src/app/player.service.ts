@@ -15,6 +15,20 @@ export class PlayerService {
 
   getPlayerById(playerId: string){
    return this.angularFire.database.object('players/' + playerId);
- }
+  }
+
+  updatePlayer(player){
+    var playerFB = this.getPlayerById(player.$key);
+    playerFB.update({
+      name: player.name,
+      artist: player.position,
+      number: player.number,
+      height: player.height,
+      experience: player.experience
+
+      //parse int?
+    });
+  }
+
 
 }
