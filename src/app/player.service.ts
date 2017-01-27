@@ -6,7 +6,7 @@ import { Player } from './player.model';
 export class PlayerService {
   players: FirebaseListObservable<any[]>;
 
-  constructor(private angularFire: AngularFire, private http: Http) {
+  constructor(private angularFire: AngularFire) {
     this.players = angularFire.database.list('players');
   }
 
