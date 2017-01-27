@@ -28,6 +28,8 @@ export class PlayerDetailComponent implements OnInit {
 
   playerStats() {
     this.http.get("https://api.sportradar.us/nba-t3/players/37fbc3a5-0d10-4e22-803b-baa2ea0cdb12/profile.json?api_key=" + nbaKey.apiKey).subscribe(result => console.log(result));
+
+    //add fail condition
   }
 
 }
