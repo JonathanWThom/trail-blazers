@@ -3,7 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { FirebaseObjectObservable } from 'angularfire2';
 import { PlayerService } from '../player.service';
-import { Http, Headers, Response } from '@angular/http';
+import { Http } from '@angular/http';
+import { nbaKey } from '../api-keys';
 
 @Component({
   selector: 'app-player-detail',
@@ -22,6 +23,11 @@ export class PlayerDetailComponent implements OnInit {
    });
    this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
    console.log(this.playerToDisplay.name);
+   this.playerStats();
+  }
+
+  playerStats() {
+    this.http.get("https://api.sportradar.us/nba-t3/players/37fbc3a5-0d10-4e22-803b-baa2ea0cdb12/profile.json?api_key=" + nbaKey.apiKey).subscribe(result => console.log(result));
   }
 
 }
