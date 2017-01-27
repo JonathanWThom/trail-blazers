@@ -10,5 +10,7 @@
   <a (click)="goToPlayerPage(player)">{{player.name}}</a>
   <div *ngIf="currentRoute === '/admin'">
     <app-edit-player [player]="player"></app-edit-player>
+    <br>
+    <br>
   </div>
 </div>

@@ -1,28 +1,29 @@
-<h4>Edit Player</h4>
+<button class="btn" (click)="editForm()" *ngIf="!editFormShow">Edit</button>
+<div *ngIf="editFormShow">
+  <label>Name:</label>
+  <input [(ngModel)]="player.name">
+  <br>
 
-<label>Name:</label>
-<input [(ngModel)]="player.name">
-<br>
+  <label>Position:</label>
+  <input [(ngModel)]="player.position">
+  <br>
 
-<label>Position:</label>
-<input [(ngModel)]="player.position">
-<br>
+  <label>Number:</label>
+  <input [(ngModel)]="player.number">
+  <br>
 
-<label>Number:</label>
-<input [(ngModel)]="player.number">
-<br>
+  <label>Height (inches):</label>
+  <input [(ngModel)]="player.height">
+  <br>
 
-<label>Height (inches):</label>
-<input [(ngModel)]="player.height">
-<br>
+  <label>Years Pro:</label>
+  <input [(ngModel)]="player.experience">
+  <br>
 
-<label>Years Pro:</label>
-<input [(ngModel)]="player.experience">
-<br>
+  <label>Image URL</label>
+  <input [(ngModel)]="player.image">
+  <br>
 
-<label>Image URL</label>
-<input [(ngModel)]="player.image">
-<br>
-
-<button (click)="updatePlayer(player)" class="btn">Update</button>
+  <button (click)="updatePlayer(player)" class="btn">Update</button>
+</div>
 <button (click)="deletePlayer(player)" class="btn btn-danger">Delete Player</button>

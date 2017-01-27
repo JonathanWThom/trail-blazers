@@ -9,6 +9,7 @@ import { PlayerService } from '../player.service';
   providers: [ PlayerService ]
 })
 export class EditPlayerComponent implements OnInit {
+  editFormShow: boolean = false;
   @Input() player: FirebaseObjectObservable<any>;
   constructor(private playerService: PlayerService) { }
 
@@ -17,12 +18,17 @@ export class EditPlayerComponent implements OnInit {
 
   updatePlayer(player) {
     this.playerService.updatePlayer(player);
+    this.editFormShow = false;
   }
 
   deletePlayer(player){
     if(confirm("Are you sure you want to remove this player from the team?")){
       this.playerService.deletePlayer(player);
     }
+  }
+
+  editForm() {
+    this.editFormShow = true;
   }
 
 }
