@@ -14,19 +14,19 @@
   <div>
     <label>Number</label>
     <br>
-    <input #newNumber>
+    <input #newNumber type="number">
   </div>
 
   <div>
-    <label>Height</label>
+    <label>Height (inches)</label>
     <br>
-    <input #newHeight>
+    <input #newHeight type="number">
   </div>
 
   <div>
     <label>Years Pro</label>
     <br>
-    <input #newExperience>
+    <input #newExperience type="number">
   </div>
   <button class="btn" (click)="newPlayer(newName.value, newPosition.value, newNumber.value, newHeight.value, newExperience.value); newName.value=''; newPosition.value=''; newNumber.value=''; newHeight.value=''; newExperience.value=''">Create Player</button>
 </div>
