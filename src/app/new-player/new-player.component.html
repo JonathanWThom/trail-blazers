@@ -1,3 +1,32 @@
-<p>
-  new-player works!
-</p>
+<div>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Position</label>
+    <br>
+    <input #newPosition>
+  </div>
+
+  <div>
+    <label>Number</label>
+    <br>
+    <input #newNumber>
+  </div>
+
+  <div>
+    <label>Height</label>
+    <br>
+    <input #newHeight>
+  </div>
+
+  <div>
+    <label>Years Pro</label>
+    <br>
+    <input #newExperience>
+  </div>
+  <button class="btn" (click)="newPlayer(newName.value, newPosition.value, newNumber.value, newHeight.value, newExperience.value); newName.value=''; newPosition.value=''; newNumber.value=''; newHeight.value=''; newExperience.value=''">Create Player</button>
+</div>

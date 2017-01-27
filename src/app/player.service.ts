@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Player } from './player.model';
 
 @Injectable()
 export class PlayerService {
@@ -31,6 +32,10 @@ export class PlayerService {
   deletePlayer(player) {
     var playerFB = this.getPlayerById(player.$key);
     playerFB.remove();
+  }
+
+  addPlayer(player: Player) {
+    this.players.push(player);
   }
 
 
