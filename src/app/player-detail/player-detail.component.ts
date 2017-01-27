@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { FirebaseObjectObservable } from 'angularfire2';
 import { PlayerService } from '../player.service';
+import { Http, Headers, Response } from '@angular/http';
 
 @Component({
   selector: 'app-player-detail',
@@ -13,7 +14,7 @@ import { PlayerService } from '../player.service';
 export class PlayerDetailComponent implements OnInit {
   playerId: string;
   playerToDisplay;
-  constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService, private http: Http) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
