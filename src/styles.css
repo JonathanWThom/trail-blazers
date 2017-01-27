@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+.navbar {
+  background-color: black;
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav li a {
+  color: red;
+}
+
+h3 {
+  text-align: center;
+}

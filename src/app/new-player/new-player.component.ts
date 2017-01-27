@@ -15,8 +15,8 @@ export class NewPlayerComponent implements OnInit {
   ngOnInit() {
   }
 
-  newPlayer(name: string, position: string, number: string, height: string, experience: string) {
-    var newPlayer: Player = new Player(name, position, parseInt(number), parseInt(height), parseInt(experience));
+  newPlayer(name: string, position: string, number: string, height: string, experience: string, image: string) {
+    var newPlayer: Player = new Player(name, position, parseInt(number), parseInt(height), parseInt(experience), image);
     this.playerService.addPlayer(newPlayer);
   }
 

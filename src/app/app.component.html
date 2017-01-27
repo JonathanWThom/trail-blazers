@@ -1,9 +1,17 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div routerLink='' class="navbar-brand">
+        Portland Trail Blazers
+      </div>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink='about'>About</a></li>
+      <li><a routerLink='admin'>Admin</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
-  <a routerLink=''>Home</a>
-  <a routerLink='about'>About</a>
-  <a routerLink='admin'>Admin</a>
-  <h1>
-    {{title}}
-  </h1>
   <router-outlet></router-outlet>
 </div>

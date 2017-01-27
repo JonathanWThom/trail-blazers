@@ -1,7 +1,11 @@
-<div>
-  <h3>{{(playerToDisplay | async)?.name}}</h3>
-  <h4>{{(playerToDisplay | async)?.position}}</h4>
-  <p>{{(playerToDisplay | async)?.number}}</p>
-  <p>{{(playerToDisplay | async)?.height}}</p>
-  <p>{{(playerToDisplay | async)?.experience}}</p>
+<h3>#{{(playerToDisplay | async)?.number}} {{(playerToDisplay | async)?.name}}</h3>
+<div class="row">
+  <div class="col-sm-6">
+    <h4>Position: {{(playerToDisplay | async)?.position}}</h4>
+    <h4>Height: {{(playerToDisplay | async)?.height}} inches</h4>
+    <h4>Years Pro: {{(playerToDisplay | async)?.experience}}</h4>
+  </div>
+  <div class="col-sm-6">
+    <img src="http://www.csnnw.com/sites/csnnw/files/2016/05/25/aminu-newsblock.jpg" alt="{{playerToDisplay | async}}?.name}}" />
+  </div>
 </div>

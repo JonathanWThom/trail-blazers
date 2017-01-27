@@ -28,5 +28,12 @@
     <br>
     <input #newExperience type="number">
   </div>
-  <button class="btn" (click)="newPlayer(newName.value, newPosition.value, newNumber.value, newHeight.value, newExperience.value); newName.value=''; newPosition.value=''; newNumber.value=''; newHeight.value=''; newExperience.value=''">Create Player</button>
+
+  <div>
+    <label>Image URL</label>
+    <br>
+    <input #newImage>
+  </div>
+  
+  <button class="btn" (click)="newPlayer(newName.value, newPosition.value, newNumber.value, newHeight.value, newExperience.value, newImage.value); newName.value=''; newPosition.value=''; newNumber.value=''; newHeight.value=''; newExperience.value=''; newImage.value=''">Create Player</button>
 </div>
