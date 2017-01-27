@@ -22,12 +22,15 @@ export class PlayerService {
     playerFB.update({
       name: player.name,
       artist: player.position,
-      number: player.number,
-      height: player.height,
-      experience: player.experience
-
-      //parse int?
+      number: parseInt(player.number),
+      height: parseInt(player.height),
+      experience: parseInt(player.experience)
     });
+  }
+
+  deletePlayer(player) {
+    var playerFB = this.getPlayerById(player.$key);
+    playerFB.remove();
   }
 
 
