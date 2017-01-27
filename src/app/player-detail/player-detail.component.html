@@ -6,6 +6,6 @@
     <h4>Years Pro: {{(playerToDisplay | async)?.experience}}</h4>
   </div>
   <div class="col-sm-6">
-    <img src="http://www.csnnw.com/sites/csnnw/files/2016/05/25/aminu-newsblock.jpg" alt="{{playerToDisplay | async}}?.name}}" />
+    <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.name}}" />
   </div>
 </div>
