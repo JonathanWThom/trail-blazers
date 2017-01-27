@@ -5,6 +5,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { routing } from './app.routing';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { PlayerListComponent } from './player-list/player-list.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { NewPlayerComponent } from './new-player/new-player.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -16,13 +23,20 @@ export const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    PlayerDetailComponent,
+    PlayerListComponent,
+    EditPlayerComponent,
+    NewPlayerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
