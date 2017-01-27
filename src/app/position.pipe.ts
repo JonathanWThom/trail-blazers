@@ -5,28 +5,27 @@ import { FirebaseListObservable } from 'angularfire2';
   name: 'position',
   pure: false
 })
+
 export class PositionPipe implements PipeTransform {
 
-  //change to any object types if neccessary
+  transform(input: any[], selectedPosition: string) {
+    var output: any[] = [];
 
-  transform(input: any[], position: string) {
-    var output: any[];
-
-    if (position === "Center") {
+    if (selectedPosition === "Center") {
       input.forEach(function(player) {
         if (player.position === "Center") {
           output.push(player);
         }
       });
       return output;
-    } else if (position === "Forward") {
+    } else if (selectedPosition === "Forward") {
       input.forEach(function(player) {
         if (player.position === "Forward") {
           output.push(player);
         }
       });
       return output;
-    } else if (position === "Guard") {
+    } else if (selectedPosition === "Guard") {
       input.forEach(function(player) {
         if (player.position === "Guard") {
           output.push(player);

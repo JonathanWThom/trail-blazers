@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class PlayerListComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  
+  filterByPosition: string = "All Players";
   constructor(private playerService: PlayerService, private router: Router) { }
 
   ngOnInit() {
@@ -21,6 +21,10 @@ export class PlayerListComponent implements OnInit {
 
   goToPlayerPage(player) {
     this.router.navigate(['players', player.$key]);
+  }
+
+  onChange(position) {
+  this.filterByPosition = position;
   }
 
 }
