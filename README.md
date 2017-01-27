@@ -6,6 +6,8 @@
 
 ## Setup/Installation Requirements
 
+* View at [https://trailblazers-e4317.firebaseapp.com/](https://trailblazers-e4317.firebaseapp.com/), or to run locally, do the following.
+
 * _In the command line, run:_
 ```
 git clone https://github.com/JonathanWThom/trail-blazers.git
