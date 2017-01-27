@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Player } from './player.model';
-import { Http } from '@angular/http';
-import { nbaKey } from './api-keys';
 
 @Injectable()
 export class PlayerService {
