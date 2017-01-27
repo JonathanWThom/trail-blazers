@@ -5,10 +5,10 @@ import { nbaKey } from './api-keys';
 
 @Injectable()
 export class StatsService {
-
+  standings: any = {};
   constructor(private http: Http) { }
   getStandings() {
-    this.http.get("https://api.sportradar.us/nba-t3/seasontd/2016/REG/standings.json?api_key=" + nbaKey.apiKey).subscribe(result => console.log(result));
+    return this.http.get("https://api.sportradar.us/nba-t3/seasontd/2016/REG/standings.json?api_key=" + nbaKey.apiKey);
   }
 
 }

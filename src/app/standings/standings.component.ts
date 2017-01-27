@@ -9,10 +9,20 @@ import { StatsService } from '../stats.service';
 })
 export class StandingsComponent implements OnInit {
   standings;
+  result;
+  conferences = [];
   constructor(private statsService: StatsService) { }
 
   ngOnInit() {
-    this.standings = this.statsService.getStandings();
+    this.statsService.getStandings().subscribe(standings => {
+      this.standings = standings;
+      this.result = this.standings._body;
+      console.log(JSON.parse(this.result));
+      this.result = JSON.parse(this.result);
+      this.conferences.push(this.result.conferences[0]);
+      this.conferences.push(this.result.conferences[1]);
+    });
+
   }
 
 }
